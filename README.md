@@ -1,1 +1,2 @@
-# bestbot
+# legendry4ever
+Awesome Bot
