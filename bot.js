@@ -198,7 +198,7 @@ if (command == "embed") {
 
 //Helps
 client.on("message", message => {
- if (message.content === "&help-admin") {
+ if (message.content === "$help-admin") {
   var embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('© NinjaBot :heart: جميع الحقوق محفوظة 2018 لــبوت')
@@ -238,7 +238,7 @@ client.on("message", message => {
           .addField('$avatar', `يجبلك الافتار حقك يعني صورة حسابك`)
 	  .addField('$server', `يجبلك معلومات السيرفر`)
 	  .addField('$id', `يجبلك الملف الشخصي حقك`)
-	 	  .addField('.servers', `يجبلك عدد السيرفرات التي البوت داخله`)
+	 	  .addField('$servers', `يجبلك عدد السيرفرات التي البوت داخله`)
 	  .addField('$embed', `البوت يكرر الكلام الي انت تقوله بامبد`)
 	  .addField('$say', `البوت يكرر الكلام الي انت تقوله بدون امبد`)
 	  .addField('$ping', `يقلك كم بنق البوت`)
@@ -659,7 +659,7 @@ if (message.content.startsWith("$c-voice")) {
       var DarkLast = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL)
-      .setTitle(':star:| Members info')
+      .setTitle(' :star: | Members info')
       .addField(':busts_in_silhouette: Members Count',`${message.guild.memberCount}`)
       message.channel.send(DarkLast);
     });
@@ -3445,7 +3445,7 @@ function play(guild, song) {
 }//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 
 const adminprefix = "$";//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
-const devs = ['499270969421070338'];//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+const devs = ['314135031029170197'];//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
 client.on('message', message => {//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
   var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
     if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
@@ -3496,7 +3496,7 @@ client.on("message", message => {
 /////////////////////////////////////////////////////////
 
   client.on('ready', () => {
-     client.user.setActivity("$help | .inv | By Fr3onGamer" ,{type: 'WATCHING'});
+     client.user.setActivity("$help | $inv | By Fr3onGamer" ,{type: 'WATCHING'});
 
 });
   
